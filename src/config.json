@@ -1,0 +1,27 @@
+{
+	"project" : "Citizen Identity Project",
+	"name": "nhs-pds-poller",
+	"description": "Handles PDS requests",
+	"author": "HSCIC",
+	"debugLevel": "debug",
+	"workerServicePollIntervalMillis" : 5000,
+	"workerServicePort" : 9004,
+	"verifyToPdsBridgeUrl": "http://localhost",
+	"verifyToPdsBridgePort": 9003,
+	"dequeueFromBridgeToWorkerMethod": "dequeueFromBridgeToWorker",
+	"enqueueFromWorkerBackToBridgeMethod": "enqueueFromWorkerBackToBridge",
+	"htmlColours" : {
+		"hscicOrange" : "#D93F02",
+		"hscicBlue" : "#005FC8",
+		"hscicRed" : "#BF3A3B",
+		"britishRacingGreen" : "#004225"
+	},
+	"defaultHtmlStyles" : "* {text-align: center;} .displayInline {display: inline-block} .autoWidth {width: auto;} .minWidth60 {min-width: 60px;} .leftAlign {text-align: left;} .rightAlign {text-align: right;} .floatLeft {float: left;} .floatRight {float: right;} .verticalAlignMiddle {vertical-align: middle;}  .verticalAlignTop {vertical-align: top;} td.notSetDisplay { background-color: #D3D3D3; color: #000000; } td.okDisplay { background-color: #ADEBAD; color: #000000; } td.warningDisplay { background-color: #FFB46A; color: #000000; } td.errorDisplay { background-color: #FF6347; color: #FFFFFF; }",
+	"hscicHtmlStyles": " body,.hscicText {color:#BF3A3B; background-color: #FFFFFF;} .hscicHeader {color:#FFFFFF; background-color: #BF3A3B} .hscicTable {margin: auto; max-width: 1400px; border-collapse: collapse} .hscicTable td, .hscicTable th {border: 1px solid grey; padding: 5px 10px;} .hscicTable th {font-size: 120%; border-color:#BF3A3B;} .hscicTable.noBorder .noBorder { border: none}",
+	"pdsConfig": {
+		"pfxFileName": "certs/559945d9.pfx",
+		"pfxPassphrase": "Password1",
+		"host": "msg.dev.spine2.ncrs.nhs.uk",
+		"useFakePds": false
+	}
+}
