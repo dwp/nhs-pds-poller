@@ -3,12 +3,6 @@ var configJson = require('./config.json');
 var packageJson = require('./package.json');
 var htmlEncode = require('htmlencode');
 
-// ========================================================
-// common-tools.js
-// A library of functions to import
-// MM & IP, Sept 2015
-// ========================================================
-
 // error (least logging) > info (medium logging) > debug (verbose logging)
 var loggingLevels = { system : 0, error : 1, info : 2, debug : 3};
 
